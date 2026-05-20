@@ -1,0 +1,78 @@
+#tecnologia {
+    padding: 100px 0;
+}
+
+#tecnologia h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    color: var(--text-color);
+}
+
+.categoria-tech {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.categoria-tech h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    color: var(--nav-bg);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.grade-tech {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    font-size: 4rem;
+    color: #ccc;
+    transition: 0.3s;
+}
+
+.grade-tech i {
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.grade-tech i:hover {
+    transform: scale(1.2);
+    color: var(--nav-bg);
+}
+
+.tag-tech {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    color: #ccc;
+    transition: 0.3s;
+}
+
+.tag-tech:hover {
+    color: var(--nav-bg);
+    transform: scale(1.1);
+}
+
+[data-theme="dark"] .grade-tech i:hover,
+[data-theme="dark"] .tag-tech:hover {
+    color: var(--nav-text);
+}
+
+[data-theme="dark"] .categoria-tech h3 {
+    color: var(--nav-text);
+}
+
+@media (max-width: 768px) {
+    .grade-tech {
+        font-size: 3rem;
+        gap: 25px;
+    }
+
+    .tag-tech {
+        font-size: 1.2rem;
+    }
+}

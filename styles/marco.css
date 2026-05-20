@@ -1,0 +1,266 @@
+#container-player {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    z-index: 10001;
+}
+
+.coracao-3d-wrapper {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    animation: girar3D 5s linear infinite;
+    filter: var(--heart-filter);
+    transition: filter 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart-active {
+    filter: drop-shadow(0 0 12px #ff0000) brightness(1.2) !important;
+    animation: girar3D 3s linear infinite, pulsar 1.5s ease-in-out infinite !important;
+}
+
+#card-reprodutor {
+    position: fixed;
+    bottom: 90px;
+    left: 25px;
+    width: 300px;
+    background: var(--form-bg);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#fechar-card {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 25px;
+    height: 25px;
+    background: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes girar3D {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes pulsar {
+
+    0%,
+    100% {
+        transform: scale(1) rotateY(0deg);
+    }
+
+    50% {
+        transform: scale(1.2) rotateY(180deg);
+    }
+}
+
+.oculto {
+    display: none !important;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+@media (max-width: 768px) {
+    #card-reprodutor {
+        width: calc(100% - 50px);
+        left: 25px;
+    }
+}
+
+#marco {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/images/marco/anime-blumen.gif");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+    color: #fff;
+}
+
+#marco h2 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    letter-spacing: 2px;
+}
+
+.container-evolucao-master {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.envoltório-evolucao {
+    width: 100%;
+    overflow-x: hidden;
+    padding: 20px 0;
+}
+
+.trilha-evolucao {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    width: max-content;
+    padding: 0 10px;
+}
+
+.card-evolucao {
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px;
+    transition: 0.3s ease;
+}
+
+.card-evolucao:hover:not(.bloqueado) {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+    border-color: var(--nav-bg);
+}
+
+.destaque-marco {
+    border-left: 5px solid var(--nav-bg);
+}
+
+.destaque-testes {
+    border-left: 5px solid var(--accent-color);
+}
+
+.card-evolucao.bloqueado {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.info-evo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.dia-evo {
+    font-weight: bold;
+    color: var(--nav-bg);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.titulo-evo {
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.botao-evo {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: var(--nav-bg);
+    color: #fff !important;
+    transition: 0.3s;
+}
+
+.botao-evo:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.botao-nav {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.botao-nav:hover {
+    background: var(--nav-bg);
+    transform: scale(1.1);
+}
+
+[data-theme="dark"] .card-evolucao {
+    background: rgba(20, 18, 19, 0.6);
+    border: 1px solid var(--nav-text);
+}
+
+[data-theme="dark"] .dia-evo {
+    color: var(--nav-text);
+}
+
+[data-theme="dark"] .botao-evo {
+    background: var(--nav-text);
+    color: #000 !important;
+}
+
+[data-theme="dark"] .botao-nav:hover {
+    background: var(--nav-text);
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    #marco {
+        background-attachment: scroll;
+    }
+
+    .card-evolucao {
+        min-width: 260px;
+        padding: 15px;
+    }
+
+    .botao-nav {
+        display: none;
+    }
+
+    .envoltório-evolucao {
+        overflow-x: auto;
+    }
+}

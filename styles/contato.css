@@ -1,0 +1,109 @@
+#contato {
+    background-color: var(--section-grey);
+    padding: 100px 0;
+}
+
+#contato h2 {
+    color: var(--text-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.subtitulo-contato {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+.formulario-contato {
+    max-width: 700px;
+    margin: 0 auto;
+    background: var(--form-bg);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.grupo-campo {
+    margin-bottom: 20px;
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.formulario-contato input:focus,
+.formulario-contato textarea:focus {
+    outline: none;
+    border-color: var(--nav-bg);
+    box-shadow: 0 0 10px rgba(107, 168, 157, 0.3);
+    background-color: #fff;
+}
+
+.botao-enviar {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--nav-bg);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botao-enviar:hover {
+    background-color: var(--text-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+[data-theme="dark"] .formulario-contato {
+    background: var(--form-bg);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .botao-enviar {
+    background-color: var(--nav-text);
+    color: #000;
+}
+
+[data-theme="dark"] .botao-enviar:hover {
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .formulario-contato {
+        padding: 25px;
+        margin: 0 15px;
+    }
+
+    .botao-enviar {
+        font-size: 1rem;
+    }
+}

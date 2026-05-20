@@ -1,11 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Maria Clara Carvalho</title>
+    <link rel="icon" type="image/png" href="./assets/images/icon/pyy.png">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="logo">MARIA CLARA CARVALHO</a>
+            <div class="menu-direita">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#sobre">SOBRE</a></li>
+                    <li><a href="#habilidade">COMPETÊNCIAS</a></li>
+                    <li><a href="#marco">EVOLUÇÃO</a></li>
+                    <li><a href="#tecnologia">TECNOLOGIAS</a></li>
+                    <li><a href="#contato">CONTATO</a></li>
+                </ul>
+                <button id="botaotema" aria-label="Alternar modo escuro">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="mobile-menu-btn" aria-label="Abrir menu de navegação">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio">
+        <div class="conteudo-principal">
+            <h1>Hello World</h1>
+            <p>Pixels e lógica, tudo comigo <br/>• Sou estudante do ensino superior de tecnologia em Análise e Desenvolvimento de Sistemas •</p>
+            <a href="#sobre" class="seta-rolagem" id="ir-para-sobre" aria-label="Ver mais sobre Maria Clara">
+                <i class="fas fa-star" aria-hidden="true"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="sobre" class="secao-clara">
+        <div class="container">
+            <h2>UM POUCO SOBRE MIM</h2>
+            <div class="foto-perfil" role="img" aria-label="Foto de perfil de Maria Clara Carvalho"></div>
+            <p>Desenvolvedora focada na intersecção entre <strong>lógica de programação</strong> e <strong>design de interface</strong>, entregando soluções que alinham performance técnica e usabilidade.</p>
+        </div>
+    </section>
     
+    <section id="meu-perfil" class="secao-parallax">
+        <div class="container">
+            <div class="conteudo-perfil">
+                <h2>QUER ME CONHECER MELHOR?</h2>
+                <p>Preparei um material especial contando um pouco mais sobre minha trajetória, meus 26 anos de história e o que me motiva no dia a dia da tecnologia.</p>
+                <a href="./assets/PDF/Perfil_Maria_Clara_Carvalho=MACLARTECH.pdf" class="botao-download" download aria-label="Baixar apresentação pessoal de Maria Clara">
+                    <i class="fas fa-file-download"></i> Baixar Minha História (PDF)
+                </a>
+            </div>    
+        </div>
+    </section>
+    
+    <section id="habilidade" class="secao-cinza" aria-labelledby="titulo-habilidades">
+        <div class="container">
+            <h2 id="titulo-habilidades">SOLUÇÕES E COMPETÊNCIAS</h2>
+            <div class="grade-habilidades">
+                <article class="item-habilidade">
+                    <div class="circulo-icone">
+                        <i class="fas fa-palette" aria-hidden="true"></i>
+                    </div>
+                    <h3>UI DESIGN</h3>
+                    <p>Criação de interfaces focadas na experiência do usuário, aplicando conceitos de usabilidade e design visual para soluções intuitivas.</p>
+                </article>
+                <article class="item-habilidade">
+                    <div class="circulo-icone">
+                        <i class="fas fa-code" aria-hidden="true"></i>
+                    </div>
+                    <h3>DESENVOLVIMENTO WEB</h3>
+                    <p>Construção de aplicações modernas e responsivas, integrando interfaces dinâmicas com lógica de programação eficiente.</p>
+                </article>
+                <article class="item-habilidade">
+                    <div class="circulo-icone">
+                        <i class="fas fa-brain" aria-hidden="true"></i>
+                    </div>
+                    <h3>TECNOLOGIAS & STACK</h3>
+                    <p>Evolução constante em ecossistemas como React e Next.js para resolver problemas reais através de código estruturado.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="marco" class="secao-parallax">
+        <div class="container">
+            <h2>ACOMPANHE A MINHA EVOLUÇÃO</h2>
+            <p class="subtitulo">Lógica & Experimentos Web</p>
+            <div class="container-evolucao-master">
+                <button class="botao-nav anterior" onclick="rolarTrilha(-1)" aria-label="Anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="envoltório-evolucao" id="envoltórioEvo">
+                    <div class="trilha-evolucao">
+                        <div class="card-evolucao destaque-marco">
+                            <div class="info-evo">
+                                <span class="dia-evo">LAB</span>
+                                <span class="titulo-evo">Explorador</span>
+                            </div>
+                            <div class="acoes-evo">
+                                <a href="./html/marco/index.html" class="botao-evo" title="Abrir Linha do Tempo">
+                                    <i class="fas fa-terminal"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-evolucao destaque-testes">
+                            <div class="info-evo">
+                                <span class="dia-evo">TESTS</span>
+                                <span class="titulo-evo">Experimentos</span>
+                            </div>
+                            <div class="acoes-evo">
+                                <a href="./html/testes/index.html" class="botao-evo" title="Ver Miniaturas">
+                                    <i class="fas fa-vial"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-evolucao bloqueado">
+                            <div class="info-evo">
+                                <span class="dia-evo">NEXT</span>
+                                <span class="titulo-evo">Em Construção...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="botao-nav proximo" onclick="rolarTrilha(1)" aria-label="Próximo">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="tecnologia" class="secao-clara" aria-labelledby="titulo-tecnologia">
+        <div class="container">
+            <h2 id="titulo-tecnologia">STACK TECNOLÓGICA</h2>
+            <div class="categoria-tech">
+                <h3>Frontend & Frameworks</h3>
+                <div class="grade-tech">
+                    <i class="fab fa-html5" title="HTML5" aria-label="HTML5"></i>
+                    <i class="fab fa-css3-alt" title="CSS3" aria-label="CSS3"></i>
+                    <i class="fab fa-js" title="JavaScript" aria-label="JavaScript"></i>
+                    <i class="fab fa-react" title="React.js / Next.js" aria-label="React e Next.js"></i>
+                    <span class="tag-tech" title="Vite">Vite</span>
+                </div>
+            </div>
+            <div class="categoria-tech">
+                <h3>Backend & Linguagens</h3>
+                <div class="grade-tech">
+                    <i class="fab fa-java" title="Java" aria-label="Java"></i>
+                    <i class="fab fa-python" title="Python" aria-label="Python"></i>
+                    <span class="tag-tech" title="Linguagem C">C</span>
+                </div>
+            </div>
+            <div class="categoria-tech">
+                <h3>Dados & Infraestrutura</h3>
+                <div class="grade-tech">
+                    <i class="fas fa-database" title="SQL" aria-label="Banco de Dados SQL"></i>
+                    <i class="fab fa-git-alt" title="Git" aria-label="Git e Versionamento"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="secao-cinza" aria-labelledby="titulo-contato">
+        <div class="container">
+            <h2 id="titulo-contato">VAMOS CONVERSAR</h2>
+            <p class="subtitulo-contato">Sinta-se à vontade para entrar em contato para projetos, parcerias ou oportunidades.</p>
+            <form action="https://formspree.io/f/maqvnegg" method="POST" class="formulario-contato">
+                <div class="grupo-campo">
+                    <label for="nome" class="sr-only">Seu Nome</label>
+                    <input type="text" id="nome" name="name" placeholder="Seu Nome" required>
+                </div>
+                <div class="grupo-campo">
+                    <label for="email" class="sr-only">Seu E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
+                </div>
+                <div class="grupo-campo">
+                    <label for="telefone" class="sr-only">Telefone / WhatsApp</label>
+                    <input type="tel" id="telefone" name="phone" placeholder="Telefone / WhatsApp" required>
+                </div>
+                <div class="grupo-campo">
+                    <label for="mensagem" class="sr-only">Como posso ajudar?</label>
+                    <textarea id="mensagem" name="message" rows="5" placeholder="Como posso ajudar?" required></textarea>
+                </div>
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">            
+                <button type="submit" class="botao-enviar">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+<footer id="rodape">
+        <div class="icones-sociais">
+            <a href="https://github.com/maclartech" target="_blank" aria-label="Acessar meu perfil no GitHub">
+                <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/maclartech/" target="_blank" aria-label="Conectar no LinkedIn">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:mclaracarvalho.tech@gmail.com" aria-label="Enviar um e-mail direto">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+            </a>
+        </div>
+        <p class="copyright">© Todos os direitos reservados: <strong>Maria Clara Carvalho</strong> | 2026</p>
+    </footer>
+    
+    <button id="scroll-top" aria-label="Voltar ao topo">
+        <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    <div id="container-player">
+        <div class="coracao-3d-wrapper" id="player-gatilho" title="Play Music">
+            <svg viewBox="0 0 100 100" width="40" height="40">
+                <path d="M50 30 C 60 10, 90 20, 90 50 C 90 80, 50 100, 50 100 C 50 100, 10 80, 10 50 C 10 20, 40 10, 50 30 Z" fill="#ff0000" />
+            </svg>
+        </div>
+        
+        <div id="card-reprodutor" class="oculto">
+            <button id="fechar-card">×</button>
+            <div class="video-container">
+                <iframe id="frame-youtube" width="100%" height="150" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>

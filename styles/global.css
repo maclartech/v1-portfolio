@@ -1,0 +1,82 @@
+:root {
+    --bg-color: #F7F9F8;
+    --section-grey: #E8F0EE;
+    --text-color: #2D3E3A;
+    --nav-bg: #6BA89D;
+    --nav-text: #ffffff;
+    --hero-bg: url("../assets/images/hero/rio-dia.png");
+    --profile-img: url("../assets/images/perfil/perfil1.png");
+    --heart-filter: hue-rotate(140deg) brightness(1.1);
+    --scroll-btn-bg: #6BA89D;
+    --btn-visit-bg: #2D3E3A;
+    --btn-visit-text: #ffffff;
+    --accent-color: #A3C6C0;
+    --form-bg: rgba(120, 107, 168, 0.85);
+}
+
+[data-theme="dark"] {
+    --bg-color: #0F0D0E;
+    --section-grey: #1A1617;
+    --text-color: #E5DADA;
+    --nav-bg: #0A0909;
+    --nav-text: #B36B85;
+    --hero-bg: url("../assets/images/hero/rio-noite.png");
+    --profile-img: url("../assets/images/perfil/perfil2.png");
+    --heart-filter: none;
+    --scroll-btn-bg: #B36B85;
+    --accent-color: #4A1F2E;
+    --form-bg: rgba(45, 30, 35, 0.95);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

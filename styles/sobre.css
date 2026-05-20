@@ -1,0 +1,62 @@
+.secao-clara {
+    background-color: var(--bg-color);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.secao-clara h2 {
+    color: var(--text-color);
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    background-image: var(--profile-img);
+    background-size: cover;
+    background-position: center;
+    border: 3px solid var(--nav-bg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.05);
+}
+
+.secao-clara p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+.secao-clara p strong {
+    color: var(--nav-bg);
+    font-weight: 600;
+}
+
+[data-theme="dark"] .foto-perfil {
+    border-color: var(--nav-text);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .secao-clara p strong {
+    color: var(--nav-text);
+}
+
+@media (max-width: 768px) {
+    .foto-perfil {
+        width: 150px;
+        height: 150px;
+    }
+
+    .secao-clara p {
+        font-size: 1.1rem;
+        padding: 0 10px;
+    }
+}

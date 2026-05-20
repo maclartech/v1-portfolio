@@ -1,0 +1,50 @@
+#scroll-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--scroll-btn-bg);
+    color: #ffffff;
+    border: none;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, filter 0.3s ease;
+}
+
+#scroll-top i {
+    font-size: 1.2rem;
+    line-height: 0;
+}
+
+#scroll-top:hover {
+    transform: translateY(-5px);
+    filter: brightness(1.2);
+}
+
+#container-player {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    z-index: 10000;
+}
+
+.coracao-3d-wrapper {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    filter: var(--heart-filter);
+    transition: transform 0.3s ease;
+}
+
+.coracao-3d-wrapper:hover {
+    transform: scale(1.1);
+}

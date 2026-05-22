@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Certificações</title>
+    <link rel="icon" type="image/png" href="../../assets/images/icon/pyy.png">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="logo">MARIA CLARA CARVALHO</a>
+            <div class="nav-right-group">
+                <button id="alternador-tema" aria-label="Alternar tema"></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-explorador">
+        <aside class="barra-lateral">
+            <p><i class="fas fa-folder-open"></i> Certificações</p>
+            <ul class="lista-certificados" id="lista-certificados"></ul>
+        </aside>
+
+        <main class="conteudo-principal">
+            <div class="caminho-diretorio">
+                <i class="fas fa-desktop"></i> C:\Users\MariaClara\Documents\Portfolio\Certificados
+            </div>
+            
+            <div class="corpo-conteudo">
+                <a href="../../index.html#marco-zero" class="link-voltar">
+                    <i class="fas fa-arrow-left"></i> Voltar ao Portfólio
+                </a>
+
+                <div class="visualizador-certificado">
+                    <img src="" class="imagem-certificado" id="imagem-certificado" alt="Visualização do Certificado">
+                    
+                    <div class="painel-detalhes">
+                        <h2 id="titulo-certificado">Selecione um documento</h2>
+                        <p id="descricao-certificado">Clique em um dos arquivos na barra lateral para visualizar os detalhes e a imagem da credencial.</p>
+                        <hr style="border: 0; border-top: 1px solid var(--cor-borda); margin: 20px 0;">
+                        
+                        <div id="metadados-certificado" style="display: none;">
+                            <p><strong>Emissor:</strong> <span id="emissor-certificado"></span></p>
+                            <span class="tag-status"><i class="fas fa-check-circle"></i> CONCLUSÃO: <span id="data-certificado"></span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

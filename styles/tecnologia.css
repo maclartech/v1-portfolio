@@ -57,12 +57,12 @@
     transform: scale(1.1);
 }
 
-[data-theme="dark"] .grade-tech i:hover,
-[data-theme="dark"] .tag-tech:hover {
+[data-theme="escuro"] .grade-tech i:hover,
+[data-theme="escuro"] .tag-tech:hover {
     color: var(--nav-text);
 }
 
-[data-theme="dark"] .categoria-tech h3 {
+[data-theme="escuro"] .categoria-tech h3 {
     color: var(--nav-text);
 }
 

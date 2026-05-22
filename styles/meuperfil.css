@@ -51,11 +51,11 @@
     transform: scale(1.05);
 }
 
-[data-theme="dark"] #meu-perfil {
+[data-theme="escuro"] #meu-perfil {
     background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('../assets/images/perfil/capa2.png');
 }
 
-[data-theme="dark"] .botao-download:hover {
+[data-theme="escuro"] .botao-download:hover {
     background-color: var(--nav-text);
     border-color: var(--nav-text);
 }

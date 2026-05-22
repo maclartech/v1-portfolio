@@ -39,8 +39,8 @@
     font-weight: 600;
 }
 
-[data-theme="dark"] .icones-sociais a:hover,
-[data-theme="dark"] .copyright strong {
+[data-theme="escuro"] .icones-sociais a:hover,
+[data-theme="escuro"] .copyright strong {
     color: var(--nav-text);
 }
 

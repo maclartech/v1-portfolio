@@ -63,13 +63,13 @@
     }
 }
 
-[data-theme="dark"] #inicio {
+[data-theme="escuro"] #inicio {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), var(--hero-bg);
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
-[data-theme="dark"] .seta-rolagem:hover {
+[data-theme="escuro"] .seta-rolagem:hover {
     color: var(--nav-text);
 }
 
@@ -78,7 +78,7 @@
         background-attachment: scroll;
     }
 
-    [data-theme="dark"] #inicio {
+    [data-theme="escuro"] #inicio {
         background-attachment: scroll;
     }
 

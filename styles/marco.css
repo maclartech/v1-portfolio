@@ -227,21 +227,21 @@
     transform: scale(1.1);
 }
 
-[data-theme="dark"] .card-evolucao {
+[data-theme="escuro"] .card-evolucao {
     background: rgba(20, 18, 19, 0.6);
     border: 1px solid var(--nav-text);
 }
 
-[data-theme="dark"] .dia-evo {
+[data-theme="escuro"] .dia-evo {
     color: var(--nav-text);
 }
 
-[data-theme="dark"] .botao-evo {
+[data-theme="escuro"] .botao-evo {
     background: var(--nav-text);
     color: #000 !important;
 }
 
-[data-theme="dark"] .botao-nav:hover {
+[data-theme="escuro"] .botao-nav:hover {
     background: var(--nav-text);
     color: #000;
 }

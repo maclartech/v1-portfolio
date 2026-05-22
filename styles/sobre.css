@@ -40,12 +40,12 @@
     font-weight: 600;
 }
 
-[data-theme="dark"] .foto-perfil {
+[data-theme="escuro"] .foto-perfil {
     border-color: var(--nav-text);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-[data-theme="dark"] .secao-clara p strong {
+[data-theme="escuro"] .secao-clara p strong {
     color: var(--nav-text);
 }
 

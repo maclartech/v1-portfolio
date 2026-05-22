@@ -83,17 +83,17 @@
     border: 0;
 }
 
-[data-theme="dark"] .formulario-contato {
+[data-theme="escuro"] .formulario-contato {
     background: var(--form-bg);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
 }
 
-[data-theme="dark"] .botao-enviar {
+[data-theme="escuro"] .botao-enviar {
     background-color: var(--nav-text);
     color: #000;
 }
 
-[data-theme="dark"] .botao-enviar:hover {
+[data-theme="escuro"] .botao-enviar:hover {
     background-color: #fff;
 }
 

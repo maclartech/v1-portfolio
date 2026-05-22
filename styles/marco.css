@@ -17,8 +17,9 @@
     justify-content: center;
 }
 
-.heart-active {
-    filter: drop-shadow(0 0 12px #ff0000) brightness(1.2) !important;
+.heart-active,
+[data-theme="escuro"] .heart-active {
+    filter: grayscale(0%) hue-rotate(0deg) saturate(100%) brightness(1) drop-shadow(0 0 15px #ff0000) !important;
     animation: girar3D 3s linear infinite, pulsar 1.5s ease-in-out infinite !important;
 }
 

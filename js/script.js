@@ -14,27 +14,27 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const CONFIG = {
-        themeStorageKey: "portfolio-theme",
+        themeStorageKey: "tema",
         musicUrl: "https://www.youtube.com/embed/NmvVhovjJI0?autoplay=1"
     };
 
     const initTheme = () => {
         const savedTheme = localStorage.getItem(CONFIG.themeStorageKey);
         const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        const themeToApply = savedTheme || (systemPrefersDark ? "dark" : "light");
+        const themeToApply = savedTheme || (systemPrefersDark ? "escuro" : "claro");
         document.documentElement.setAttribute("data-theme", themeToApply);
         if (elements.themeIcon) {
-            elements.themeIcon.className = themeToApply === "dark" ? "fas fa-sun" : "fas fa-moon";
+            elements.themeIcon.className = themeToApply === "escuro" ? "fas fa-sun" : "fas fa-moon";
         }
     };
 
     elements.themeToggle?.addEventListener("click", () => {
         const currentTheme = document.documentElement.getAttribute("data-theme");
-        const newTheme = currentTheme === "dark" ? "light" : "dark";
+        const newTheme = currentTheme === "escuro" ? "claro" : "escuro";
         document.documentElement.setAttribute("data-theme", newTheme);
         localStorage.setItem(CONFIG.themeStorageKey, newTheme);
         if (elements.themeIcon) {
-            elements.themeIcon.className = newTheme === "dark" ? "fas fa-sun" : "fas fa-moon";
+            elements.themeIcon.className = newTheme === "escuro" ? "fas fa-sun" : "fas fa-moon";
         }
     });
 

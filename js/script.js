@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         fecharCard: document.getElementById("fechar-card"),
         frameYoutube: document.getElementById("frame-youtube"),
         scrollTop: document.getElementById("scroll-top"),
-        envoltorioEvo: document.getElementById("envoltórioEvo"),
+        envoltorioEvo: document.getElementById("envoltorioEvo"),
         sections: document.querySelectorAll("section, footer")
     };
 

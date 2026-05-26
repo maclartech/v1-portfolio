@@ -86,6 +86,14 @@ const listaDeCertificados = [
         data: "5 de Maio de 2026 | 21 de Maio de 2026",
         descricao: "Curso de 8 horas abrangendo os conceitos essenciais e fundamentos da linguagem Python. Desenvolvimento de competências em estruturas de dados, controle de fluxo e lógica aplicada, validados por módulos práticos e autoavaliação da plataforma Santander Open Academy.",
         imagem: "assets/007.jpg"
+    },
+    {
+    id: "cert-008",
+    titulo: "Administrando Banco de Dados",
+    emissor: "Fundação Bradesco",
+    data: "20 de Maio de 2026 | 22 de Maio de 2026",
+    descricao: "Curso de 15 horas focado nos conceitos fundamentais de gerenciamento e administração de bancos de dados. Compreensão prática sobre a estrutura de tabelas, integridade de dados, consultas, segurança e manutenção de ambientes de armazenamento de informações, essenciais para o desenvolvimento de sistemas robustos.",
+    imagem: "assets/008.jpg"
     }
 ];
 

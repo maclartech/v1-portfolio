@@ -70,5 +70,14 @@ const listaDeCertificados = [
         descricao:
             "Curso de 15 horas focado nos conceitos fundamentais de gerenciamento e administração de bancos de dados. Compreensão prática sobre a estrutura de tabelas, integridade de dados, consultas, segurança e manutenção de ambientes de armazenamento de informações, essenciais para o desenvolvimento de sistemas robustos.",
         imagem: "assets/008.jpg"
+    },
+    {
+        id: "cert-009",
+        titulo: "Excel",
+        emissor: "Fundação Bradesco",
+        data: "28 de Maio de 2026 | 30 de Maio de 2026",
+        descricao:
+            "Curso autoinstrucional com carga horária de 16 horas. O treinamento focou na aplicação prática das ferramentas do Microsoft Excel, abrangendo desde a estruturação de planilhas e formatação de dados até o uso de fórmulas e funções essenciais para a otimização de fluxos de trabalho e análise de informações.",
+        imagem: "assets/009.jpg"
     }
 ];

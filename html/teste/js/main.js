@@ -9,15 +9,30 @@ document.addEventListener('DOMContentLoaded', () => {
             const desafioCadastrado = desafios.find(d => d.numero === i);
             const itemTeste = document.createElement('div');
             itemTeste.classList.add('item-teste');
+            
             if (desafioCadastrado) {
                 itemTeste.classList.add('ativo');
                 itemTeste.innerHTML = `
-                    <a href="./${desafioCadastrado.numero}-${desafioCadastrado.nome}/index.html">
-                        <div class="circulo-teste">
-                            <i class="fas ${desafioCadastrado.icone}"></i>
+                    <div class="circulo-teste">
+                        <i class="fas ${desafioCadastrado.icone}"></i>
+                    </div>
+                    <span class="label-teste">Desafio ${String(i).padStart(2, '0')}</span>
+                    
+                    <div class="pokemon-card">
+                        <div class="card-moldura">
+                            <div class="card-info">
+                                <span class="card-numero">#${String(i).padStart(2, '0')}</span>
+                                <h3 class="card-titulo">${desafioCadastrado.nome}</h3>
+                                <p class="card-descricao">${desafioCadastrado.descricao}</p>
+                                <div class="card-tags">
+                                    ${desafioCadastrado.tecnologias.map(t => `<span class="tag">${t}</span>`).join('')}
+                                </div>
+                                <a href="${desafioCadastrado.github}" target="_blank" class="btn-card-github">
+                                    <i class="fab fa-github"></i> Ver Código
+                                </a>
+                            </div>
                         </div>
-                        <span class="label-teste">Desafio ${String(i).padStart(2, '0')}</span>
-                    </a>
+                    </div>
                 `;
             } else {
                 itemTeste.classList.add('inativo');

@@ -296,3 +296,141 @@ body {
         font-size: 12px;
     }
 }
+
+.item-teste.ativo {
+    position: relative;
+}
+
+.pokemon-card {
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    width: 260px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(30px) saturate(160%);
+    -webkit-backdrop-filter: blur(30px) saturate(160%);
+    border: 2px solid var(--glass-borda);
+    border-radius: 16px;
+    padding: 16px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1000;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), var(--sombra-viva);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.item-teste.ativo:hover .pokemon-card {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(-50%) scale(1) translateY(5px);
+}
+
+.card-moldura {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.card-numero {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--cor-acento);
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+}
+
+.card-titulo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.card-descricao {
+    font-size: 0.8rem;
+    color: var(--texto-secundario);
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 14px;
+}
+
+.tag {
+    font-size: 0.7rem;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.btn-card-github {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 10px 0;
+    border-radius: 8px;
+    background: var(--circulo-ativo);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-card-github:hover {
+    filter: brightness(1.15);
+    box-shadow: var(--sombra-viva);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+    body {
+        padding-top: 100px;
+    }
+
+    .grade-testes {
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+        gap: 35px 15px;
+    }
+
+    .pokemon-card {
+        position: absolute;
+        top: 105%;
+        left: 50%;
+        transform: translateX(-50%) scale(0.9);
+        width: 280px;
+        max-width: 85vw;
+        padding: 14px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+    }
+
+    .item-teste.ativo:hover .pokemon-card {
+        transform: translateX(-50%) scale(1) translateY(2px);
+    }
+
+    .card-titulo {
+        font-size: 1.1rem;
+    }
+
+    .card-descricao {
+        font-size: 0.75rem;
+    }
+}

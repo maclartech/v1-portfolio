@@ -320,10 +320,17 @@ body {
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.item-teste.ativo:hover .pokemon-card {
+.item-teste.ativo:hover .pokemon-card,
+.item-teste.ativo.fixado .pokemon-card {
     opacity: 1;
     pointer-events: auto;
     transform: translateX(-50%) scale(1) translateY(5px);
+}
+
+.item-teste.ativo.fixado .circulo-teste {
+    border-color: #ffffff;
+    box-shadow: var(--sombra-viva);
+    transform: scale(1.05);
 }
 
 .card-moldura {

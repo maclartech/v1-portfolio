@@ -4,6 +4,7 @@ import { desafios } from './desafios.js';
 document.addEventListener('DOMContentLoaded', () => {
     iniciarTema();
     const gradeTestes = document.querySelector('.grade-testes');
+    
     if (gradeTestes) {
         for (let i = 1; i <= 52; i++) {
             const desafioCadastrado = desafios.find(d => d.numero === i);
@@ -34,6 +35,21 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                     </div>
                 `;
+
+                itemTeste.addEventListener('click', (evento) => {
+                    evento.stopPropagation(); 
+
+                    if (itemTeste.classList.contains('fixado')) {
+                        itemTeste.classList.remove('fixado');
+                    } else {
+                        document.querySelectorAll('.item-teste.fixado').forEach(item => {
+                            item.classList.remove('fixado');
+                        });
+                        // Trava o card atual
+                        itemTeste.classList.add('fixado');
+                    }
+                });
+
             } else {
                 itemTeste.classList.add('inativo');
                 itemTeste.innerHTML = `
@@ -46,4 +62,10 @@ document.addEventListener('DOMContentLoaded', () => {
             gradeTestes.appendChild(itemTeste);
         }
     }
+
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.item-teste.fixado').forEach(item => {
+            item.classList.remove('fixado');
+        });
+    });
 });

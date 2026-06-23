@@ -79,5 +79,14 @@ const listaDeCertificados = [
         descricao:
             "Curso autoinstrucional com carga horária de 16 horas. O treinamento focou na aplicação prática das ferramentas do Microsoft Excel, abrangendo desde a estruturação de planilhas e formatação de dados até o uso de fórmulas e funções essenciais para a otimização de fluxos de trabalho e análise de informações.",
         imagem: "assets/009.jpg"
+    },
+    {
+        id: "cert-010",
+        titulo: "Introdução à Gestão de Projetos",
+        emissor: "Fundação Bradesco",
+        data: "16 de Junho de 2026 | 23 de Junho de 2026",
+        descricao:
+            "Curso focado nos conceitos fundamentais de Gerenciamento de Projetos com base nas boas práticas do Guia PMBOK (PMI).",
+        imagem: "assets/010.jpg"
     }
 ];
